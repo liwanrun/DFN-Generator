@@ -41,6 +41,7 @@ dfn.visualize(axs)
 
 # for poly in dfn.frac_bbox:
 #     shapely.plotting.plot_polygon(poly, axs, add_points=False, fill=False)
+# plt.savefig('./img/rdfn_buff.png', dpi=330)
 plt.show()
 
 # Output

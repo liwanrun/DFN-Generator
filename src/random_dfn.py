@@ -142,23 +142,23 @@ class RandomDFN:
             curve_off = 1
             surface_off = 1
             # write DFNs
-            file.write('/* Add discrete fracture network (DFN) */')
+            file.write('/* Add discrete fracture network (DFN) */\n')
             for i, frac in enumerate(self.fractures):
                 for j, vert in enumerate(frac.Points):
                     file.write(f'Point({j + point_off}) = {{{vert[0]}, {vert[1]}, 0.0, 1.0}};\n')
                 file.write(f'BSpline({i + curve_off}) = {{{point_off}:{point_off + len(frac.Points)-1}}};\n')
                 point_off = point_off + len(frac.Points)
             # write domain
-            file.write('/* Add domain of interest (DOI) */')
+            file.write('/* Add domain of interest (DOI) */\n')
             file.write(f'Rectangle({surface_off}) = {{0.0, 0.0, 0.0, {self.doi[0]}, {self.doi[1]}, 0.0}};\n')
             file.write(f'BooleanFragments {{ Surface{{:}}; Delete; }}{{ Curve{{:}}; Delete; }}\n')
             # physical group
-            file.write('/* Add physical groups */')
+            file.write('/* Add physical groups */\n')
             file.write(f'Physical Surface("block-1", newreg) = {{ Surface{{:}} }};\n')
             file.write(f'Physical Curve("constraint-1", newreg) = {{ Curve{{:}} }};\n')
             # mesh size
             tol = 1.0e-06
-            file.write('/* Set mesh size */')
+            file.write('/* Set mesh size */\n')
             file.write(f'dfnPoints[] = Point In BoundingBox {{{tol}, {tol}, 0.0, {self.doi[0] - tol}, {self.doi[1] - tol}, 0.0}};\n') 
             file.write(f'bndPoints[] = Point{{:}};\n')
             file.write(f'bndPoints[] -= dfnPoints[];\n')
@@ -202,5 +202,5 @@ if __name__ == '__main__':
     sdfn.visualize(axs[1])
     axs[1].add_patch(Polygon(bbox, ec='k', ls='--', lw=1.0, fill=False))
 
-    plt.savefig('./img/dfn_couple.png', dpi=300)
+    plt.savefig('./img/dfn_couple.png', dpi=330)
     plt.show()
