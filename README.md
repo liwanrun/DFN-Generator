@@ -39,23 +39,23 @@ Fig. 1 Reconstructed rough fracture.
 
 Fig. 2 Fracture network with smooth and rough fractures
 
---
+---
 
 ![optimized rdfn](./img/RDFN.png)
 ![rdfn with buff](./img/rdfn_buff.png)
 
 Fig. 3 One by one fracture sampling.
 
---
+---
 
 ![dfn in gmsh](./img/dfn_geo.png)
 ![dfn in mesh](./img/dfn_msh.png)
 
 Fig. 4 Write into gmsh and trangulate.
 
---
+---
 ![dfn in fdem](./img/dfn_fdem.png)
 
 Fig. 5 FDEM model for RDFN.
 
---
+---
