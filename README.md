@@ -1,6 +1,6 @@
 # Two-dimensional Rough Discrete Fracture Network (RDFN) generator
 
-## Introduction
+## Overview
 
 In order to realistically simulate the morphology of natural fractures embeded in the engineering rock masses, a Fourier transform approach is utilized to controllably reconstruct the fracture surface roughness. Combined with Monte-Carlo sampling technique, Rough Discrete Fracture Networks (RDFNs) can be statistically recomplished, which plays a fundamental role in computational rock mechanics and rock engineering.
 
@@ -27,6 +27,8 @@ A high quality of triangulation of the reconstructed RDFN is indispensible to fu
 4. RDFN is written into gmsh script file (.geo) and then trangulated by specifing mesh sizes. Mark the fracture and rock masses as two distinct physical groups.
 
 5. Set up FDEM numerical model by our propriatary code QFDEM, including insert zero-thickness cohesive elements, assign material constritutive relations and prescribe boundary conditions, etc.
+
+![workflow](./img/workflow.png)
 
 ## Demonstration
 
