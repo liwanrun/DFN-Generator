@@ -1,0 +1,112 @@
+<mxfile host="65bd71144e">
+    <diagram id="HuPd6p-_1SGE1Na8c6b3" name="Page-1">
+        <mxGraphModel dx="1654" dy="991" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;fontFamily=Verdana;spacing=2;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Determine harmonics according to JRC value" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;spacing=2;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="40" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=none;html=1;fontFamily=Verdana;spacing=2;" edge="1" parent="1" source="3" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Reconstruct rough fracture using IDFT" style="whiteSpace=wrap;html=1;rounded=1;fontFamily=Times New Roman;spacing=2;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="181" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="edgeStyle=none;html=1;fontFamily=Verdana;spacing=2;" edge="1" parent="1" source="6" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Randomly distribute in the domain of interest" style="whiteSpace=wrap;html=1;rounded=1;fontFamily=Times New Roman;spacing=2;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="323" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="edgeStyle=none;html=1;fontFamily=Verdana;spacing=2;" edge="1" parent="1" source="10" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Verdana;" edge="1" parent="1" source="10">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="630" y="494" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="Are the endponints of other fractures outside the buffre size of active fracture?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontFamily=Times New Roman;spacing=2;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="345" y="444" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="edgeStyle=none;html=1;fontFamily=Verdana;spacing=2;" edge="1" parent="1" source="12" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;hachureGap=4;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="12" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="630" y="636"/>
+                            <mxPoint x="630" y="353"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="Is the endpoints of active fracture outside the buffer sizes of allocated fractures?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontFamily=Times New Roman;spacing=2;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="345" y="586" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="edgeStyle=none;html=1;fontFamily=Verdana;spacing=2;" edge="1" parent="1" source="14" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Allocate the active fracture into the DFN" style="whiteSpace=wrap;html=1;rounded=1;fontFamily=Times New Roman;spacing=2;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="747" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="edgeStyle=none;html=1;fontFamily=Verdana;spacing=2;" edge="1" parent="1" source="16" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=15;" edge="1" parent="1" source="16" target="3">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="700" y="919"/>
+                            <mxPoint x="700" y="210"/>
+                            <mxPoint x="520" y="210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="Is the maximum number of random sample is reached?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontFamily=Times New Roman;spacing=2;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="345" y="869" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Verdana;" edge="1" parent="1" source="18" target="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="200" y="1060"/>
+                            <mxPoint x="200" y="70"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="Is the number of fracture set&lt;br style=&quot;font-size: 15px;&quot;&gt;&amp;nbsp;is reached?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontFamily=Times New Roman;spacing=2;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="345" y="1010" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="No" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;fontFamily=Times New Roman;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="472" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Yes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Times New Roman;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="552" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Yes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Times New Roman;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="700" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="Yes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Times New Roman;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="978" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="No" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Times New Roman;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="1039" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="No" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontFamily=Times New Roman;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="895" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="No" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;fontFamily=Times New Roman;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="616" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="i++" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;rotation=90;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="540" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="N++" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;rotation=-90;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="565" width="30" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
